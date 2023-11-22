@@ -1,0 +1,39 @@
+<div class="container mt-5">
+    <h1>Crear Comprobante</h1>
+
+    <form action="" method="POST">
+
+        <div class="mb-3">
+            <label for="Num_com" class="form-label">Número de Comprobante:</label>
+            <input type="text" id="Num_com" name="Num_com" class="form-control" readonly>
+        </div>
+
+        <div class="mb-3">
+            <label for="Tip_doc" class="form-label">Tipo de Documento:</label>
+            <select id="Tip_doc" name="Tip_doc" class="form-select" required>
+                <option value="Boleta">Boleta</option>
+                <option value="Factura">Factura</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="Ori" class="form-label">Orientación:</label>
+            <select id="Ori" name="Ori" class="form-select" required>
+                <option value="Entrada">Entrada</option>
+                <option value="Salida">Salida</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="Fec" class="form-label">Fecha:</label>
+            <input type="date" id="Fec" name="Fec" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="Mon_Tot" class="form-label">Monto Total:</label>
+            <input type="number" id="Mon_Tot" name="Mon_Tot" class="form-control" step="0.01" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Registrar Comprobante</button>
+    </form>
+</div>
